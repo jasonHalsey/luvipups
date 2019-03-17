@@ -1,0 +1,108 @@
+/*--------------------------------------------------------------
+## Instagram Gallery
+--------------------------------------------------------------*/
+.sbi_item:nth-child(1) {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+.sbi_item:nth-child(2) {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.sbi_item:nth-child(3) {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+.sbi_item:nth-child(4) {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.sbi_item:nth-child(5) {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+.sbi_item:nth-child(6) {
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+#sb_instagram #sbi_images .sbi_item {
+  width: 29.33% !important;
+  padding: 1% !important;
+  margin: 2% !important;
+  background-color: #a943bd !important;
+  -webkit-transition: .15s;
+  transition: .15s;
+  box-shadow: 0 2px 8px #563508;
+  &:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+
+  }
+}
+
+#sb_instagram {
+  max-width: 675px;
+}
+
+#sb_instagram .sbi_follow_btn {
+  -webkit-filter: drop-shadow(0px 3px 5px gray);
+  filter: drop-shadow(0px 3px 5px gray) !important;
+  display: block;
+  margin: 0 auto;
+  a {
+    border-radius: 0 !important;
+    -webkit-clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
+    clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
+    height: 75px;
+    width: 83%;
+    line-height: 64px;
+    font-size: 33px;
+    font-weight: bolder;
+    margin-bottom: 60px;
+    box-shadow: 0 2px 8px #563508;
+
+  }
+}
+
+.sbi_photo {
+  display: block;
+  height: 0 !important;
+  padding-bottom: 100%;
+}
+
+#sb_instagram svg:not(:root).svg-inline--fa {
+  display: none;
+}
+
+.stripe-bg {
+  background: repeating-linear-gradient(
+  0deg, #cfe9f3, #cfe9f3 20px, #ffffff 10px, #ffffff 35px
+  );
+  padding: 20px;
+  p {
+    color: #f34b7f;
+    width: 33%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: bolder;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+	#sb_instagram .sbi_follow_btn a {
+    line-height: 58px;
+    font-size: 16px;
+	}
+}
+
+@media only screen and (max-width: 940px) {
+	#sb_instagram .sbi_follow_btn a {
+    font-size: 14px;
+	}
+}
+
+@media only screen and (max-width: 830px) {
+	.stripe-bg p {
+    width:66%;
+	}
+}

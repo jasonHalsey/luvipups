@@ -1,0 +1,18 @@
+a {
+	color: #ffffff;
+	&:visited {
+		color: #ffffff;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: #ffffff;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

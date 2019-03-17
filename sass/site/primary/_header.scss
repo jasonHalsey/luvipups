@@ -1,0 +1,35 @@
+.site-header {
+  position: relative;
+  max-height: 120px;
+  min-height: 120px;
+  background-color: #f34b7f;
+  border-bottom: 8px solid #ffffff;
+  z-index: 999;
+  .custom-logo-link {
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    margin-left: -130px;
+  }
+}
+
+#sub-header-border, #footer-border {
+  height: 68px;
+  width: 100%;
+  background: url(images/leopard-border_02.png);
+  background-size: 100%;
+  background-position: 0% 75%;
+  background-repeat: no-repeat;
+  box-shadow: 0 2px 8px #563508;
+}
+
+#footer-border {
+  height: 0;
+  padding: 4%;
+}
+
+@media only screen and (max-width: 481px) {
+	#sub-header-border {
+    height: 50px;
+  }
+}

@@ -1,0 +1,106 @@
+
+html {
+	box-sizing: border-box;
+	.site-main {
+		position: relative;
+	}
+	#floating-heart-1, #floating-heart-2 {
+		position: absolute;
+		background-size: 100%;
+	}
+	#floating-heart-1 {
+		background: url(images/floating-hearts_07.png);
+		right: 3%;
+    bottom: -12%;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    width: 15%;
+    height: 10%;
+    background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	#floating-heart-2 {
+		background: url(images/floating-hearts_03.png);
+		left: 3%;
+    top: 57%;
+    -webkit-transform: rotate(147deg);
+    transform: rotate(0deg);
+    width: 14%;
+    height: 10%;
+    background-repeat: no-repeat;
+		background-size: 100%;
+	}
+	#paw-bottom-1, #paw-bottom-2 {
+		position: absolute;
+		background: url(images/luvi-large-paw-ds_03.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		width: 9%;
+    padding-bottom: 9%;
+	}
+	#paw-bottom-1 {
+		bottom: -4%;
+		left: 2%;
+		-webkit-transform: rotate(147deg);
+    transform: rotate(147deg);
+	}
+	#paw-bottom-2 {
+		bottom: -11%;
+		left: 12%;
+		-webkit-transform: rotate(149deg);
+    transform: rotate(149deg);
+		background-size: 85%;
+	}
+
+	footer {
+		background-color: #f34b7f;
+		height: 225px;
+		overflow: hidden;
+		padding-top: 10px;
+		.site-info {
+			width: 66%;
+			margin: 0 auto;
+			img {
+				display: block;
+				margin: 0 auto;
+			}
+			#footer-copy {
+				text-align: center;
+				color: #ffffff;
+			}
+		}
+	}
+	.entry-footer {
+		display: none;
+	}
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+@import "tables";
