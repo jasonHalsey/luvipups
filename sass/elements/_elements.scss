@@ -26,7 +26,7 @@ html {
 	    -webkit-transform: rotate(147deg);
 	    transform: rotate(0deg);
 	    width: 14%;
-	    height: 19%;
+	    height: 25%;
 	    background-repeat: no-repeat;
 		background-size: 100%;
 	}
@@ -73,6 +73,10 @@ html {
 	.entry-footer {
 		display: none;
 	}
+}
+.content_container{
+	max-width:$container_width;
+	margin:0 auto;
 }
 
 *,

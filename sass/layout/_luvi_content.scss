@@ -1,0 +1,64 @@
+.paw_bg_section{
+	background-image: url(images/video_block_be.png);
+	background-repeat: repeat;
+	padding:3.0em 2.0em;
+	p{
+	    color: #f34b7f;
+	    width: 33%;
+	    margin: 0 auto;
+	    text-align: center;
+	    font-weight: 500;
+	}
+}
+.jef_content{
+	.wp-block-media-text__content{
+		background-color: #F34B7F;
+		color:#fff;
+		text-align: center;
+		margin-left:-50px;
+		padding:2.0em 1.0em 2.0em 1.0em;
+		margin-top: 2.0em;
+	}
+	.wp-block-media-text__media{
+		position: relative;
+		z-index: 555;
+	}
+}
+
+.wp-block-image img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    min-width:360px;
+    position: relative;
+    z-index: 555;
+}
+
+.jeff_content_container{
+	.inner-column-1{
+		position: relative;
+		z-index: 555;
+	}
+	.inner-column-2{
+		position: relative;
+		z-index:36;
+		color:#fff;
+		text-align: center;
+		
+		.jeff_text_block{
+			background-color: #F34B7F;
+			padding:2.0em 2.0em 2.0em 12%;
+			margin-top: 2.0em;
+			@media screen and (max-width: 1000px) {
+				padding-left:18%;
+			}
+			@media screen and (max-width: 950px) {
+				padding-left:27%;
+			}
+			@media screen and (max-width: 768px) {
+				padding-left:1.0em;
+			}
+		}
+	}
+	
+}
