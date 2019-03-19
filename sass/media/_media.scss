@@ -41,21 +41,21 @@ object {
 		background-repeat: no-repeat;
 		background-size: 100%;
 		width: 14%;
-    padding-bottom: 14%;
+    	padding-bottom: 14%;
 	}
 	#paw-bg-1 {
 		top: 122px;
-    -webkit-transform: rotate(1deg);
-    transform: rotate(37deg);
-    left: -4.5%;
-    display:none;
+	    -webkit-transform: rotate(1deg);
+	    transform: rotate(37deg);
+	    left: -4.5%;
+	    display:none;
 	}
 	#paw-bg-2 {
 		top: 175px;
     right: 2%;
     -webkit-transform: rotate(1deg);
     transform: rotate(-6deg);
-    display:none!important;
+    display:none;
 	}
 	#paw-bg-3 {
 		top: 478px;
@@ -65,7 +65,7 @@ object {
     display:none;
 	}
 	.paw-graphic {
-		display:none!important;
+		display:none;
 	}
 }
 

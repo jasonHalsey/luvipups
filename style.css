@@ -417,7 +417,7 @@ html {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
     width: 15%;
-    height: 10%;
+    height: 25%;
     background-repeat: no-repeat;
     background-size: 100%; }
   html #floating-heart-2 {
@@ -427,7 +427,7 @@ html {
     -webkit-transform: rotate(147deg);
     transform: rotate(0deg);
     width: 14%;
-    height: 10%;
+    height: 19%;
     background-repeat: no-repeat;
     background-size: 100%; }
   html #paw-bottom-1, html #paw-bottom-2 {
@@ -620,7 +620,8 @@ a {
       text-align: center;
       font-size: 22px;
       line-height: 1;
-      border-bottom: 5px solid transparent; }
+      border-bottom: 5px solid transparent;
+      padding-bottom: 0.25em; }
       .main-navigation ul a:visited {
         color: #ffffff; }
       .main-navigation ul a:hover, .main-navigation ul a:focus, .main-navigation ul a:active {
@@ -667,7 +668,19 @@ a {
   .main-navigation li {
     float: right;
     position: relative;
-    margin: 0 1.0em; }
+    margin: 0 1.0em;
+    padding-top: 1.25em; }
+  .main-navigation li.current-menu-item a {
+    color: #ffffff;
+    border-bottom: 3px dashed #a943bd; }
+    .main-navigation li.current-menu-item a:before {
+      content: url(images/luvi-paw-small_nav.png);
+      width: 30px;
+      display: block;
+      margin: 0 auto;
+      opacity: 1; }
+  .main-navigation li.menu-divider-item {
+    padding-top: 0; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -969,7 +982,7 @@ object {
     right: 2%;
     -webkit-transform: rotate(1deg);
     transform: rotate(-6deg);
-    display: none !important; }
+    display: none; }
   #video-block #paw-bg-3 {
     top: 478px;
     right: -4.5%;
@@ -977,7 +990,7 @@ object {
     transform: rotate(-28deg);
     display: none; }
   #video-block .paw-graphic {
-    display: none !important; }
+    display: none; }
 
 .wp-block-embed-youtube {
   width: 66%;

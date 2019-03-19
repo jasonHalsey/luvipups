@@ -11,6 +11,7 @@
 			font-size: 22px;
 			line-height: 1;
 			border-bottom: 5px solid transparent;
+			padding-bottom: 0.25em;
 			&:visited {
 				color: #ffffff;
 			}
@@ -76,6 +77,7 @@
 					left: 100%;
 				}
 			}
+			
 			:hover > a,
 			.focus > a {
 			}
@@ -95,10 +97,29 @@
 		float: right;
 		position: relative;
 		margin: 0 1.0em;
+		padding-top:1.25em;
 
 		&:hover > a,
 		&.focus > a {
 		}
+	}
+	li.current-menu-item{
+		// display:none;
+		a{
+			color: #ffffff;
+			border-bottom: 3px dashed #a943bd;
+
+			&:before{
+		    	content: url(images/luvi-paw-small_nav.png) ;
+				width: 30px;
+			    display: block;	
+			    margin: 0 auto;
+			    opacity:1;
+			}
+		}
+	}
+	li.menu-divider-item{
+		padding-top:0;
 	}
 
 	a {
