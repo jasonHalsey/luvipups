@@ -14,6 +14,9 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
+			<!-- <div id="paw-bottom-1"></div> -->
+			<div id="paw-bottom-2"></div>
+			<div id="floating-heart-1"></div>
 		<div class="site-info">
 			<?php if ( get_theme_mod( 'footer_logo' ) ) : ?>
 				<a href='<?php echo esc_url( get_theme_mod( 'footer_logo_link' ) );?>'>

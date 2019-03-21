@@ -17,9 +17,9 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<div id="paw-bottom-1"></div>
-			<div id="paw-bottom-2"></div>
-			<div id="floating-heart-1"></div>
+			<!-- <div id="paw-bottom-1"></div>
+			<div id="paw-bottom-2"></div> -->
+			<!-- <div id="floating-heart-1"></div> -->
 			<div id="floating-heart-2"></div>
 		<?php
 		while ( have_posts() ) :

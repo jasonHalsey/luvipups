@@ -404,7 +404,8 @@ big {
 # Elements
 --------------------------------------------------------------*/
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  overflow-x: hidden; }
   html .site-main {
     position: relative; }
   html #floating-heart-1, html #floating-heart-2 {
@@ -413,11 +414,10 @@ html {
   html #floating-heart-1 {
     background: url(images/floating-hearts_07.png);
     right: 3%;
-    bottom: -12%;
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
-    width: 15%;
-    height: 25%;
+    width: 8%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: 100%; }
   html #floating-heart-2 {
@@ -438,7 +438,7 @@ html {
     width: 9%;
     padding-bottom: 9%; }
   html #paw-bottom-1 {
-    bottom: -4%;
+    bottom: -52%;
     left: 2%;
     -webkit-transform: rotate(147deg);
     transform: rotate(147deg); }
@@ -449,7 +449,7 @@ html {
     transform: rotate(149deg);
     background-size: 85%; }
   html footer {
-    background-color: #f34b7f;
+    background-color: #98D2F0;
     height: 225px;
     overflow: hidden;
     padding-top: 10px; }
@@ -467,6 +467,11 @@ html {
 
 .content_container {
   max-width: 1000px;
+  margin: 0 auto;
+  position: relative; }
+
+.wide_content_container {
+  max-width: 1600px;
   margin: 0 auto; }
 
 *,
@@ -876,7 +881,9 @@ a {
 
 #footer-border {
   height: 0;
-  padding: 4%; }
+  padding: 4%;
+  position: relative;
+  z-index: 222; }
 
 @media only screen and (max-width: 481px) {
   #sub-header-border {
@@ -1202,6 +1209,38 @@ object {
     text-align: center;
     font-weight: 500; }
 
+#paw-bg-1, #paw-bg-2, #paw-bg-3 {
+  position: absolute;
+  background: url(images/luvi-large-paw-ds_03.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 14%;
+  padding-bottom: 14%; }
+
+#paw-bg-1 {
+  top: 122px;
+  -webkit-transform: rotate(1deg);
+  transform: rotate(37deg);
+  left: -4.5%;
+  display: none; }
+
+#paw-bg-2 {
+  top: 175px;
+  right: 2%;
+  -webkit-transform: rotate(1deg);
+  transform: rotate(-6deg);
+  display: none; }
+
+#paw-bg-3 {
+  top: 478px;
+  right: -4.5%;
+  -webkit-transform: rotate(-28deg);
+  transform: rotate(-28deg);
+  display: none; }
+
+.paw-graphic {
+  display: none; }
+
 .jef_content .wp-block-media-text__content {
   background-color: #F34B7F;
   color: #fff;
@@ -1212,12 +1251,18 @@ object {
 .jef_content .wp-block-media-text__media {
   position: relative;
   z-index: 555; }
+.jef_content .wp-block-image img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  min-width: 360px;
+  position: relative;
+  z-index: 555; }
 
 .wp-block-image img {
   max-width: 100%;
   width: 100%;
   height: auto;
-  min-width: 360px;
   position: relative;
   z-index: 555; }
 
@@ -1229,6 +1274,8 @@ object {
   z-index: 36;
   color: #fff;
   text-align: center; }
+  .jeff_content_container .inner-column-2 .kt-inside-inner-col {
+    margin-left: -85px; }
   .jeff_content_container .inner-column-2 .jeff_text_block {
     background-color: #F34B7F;
     padding: 2.0em 2.0em 2.0em 12%;
@@ -1242,5 +1289,134 @@ object {
     @media screen and (max-width: 768px) {
       .jeff_content_container .inner-column-2 .jeff_text_block {
         padding-left: 1.0em; } }
+
+.pup_container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 0.75em; }
+  .pup_container .kt-inside-inner-col {
+    border: 3px dashed #F34B7F;
+    border-radius: 20px; }
+
+.first_litter_bannner {
+  position: absolute;
+  top: -1.0em;
+  left: -51px;
+  max-width: 134px;
+  z-index: 555; }
+
+.products_container {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative; }
+  .products_container .first_litter_bannner {
+    position: absolute;
+    top: 4em;
+    left: 45px;
+    max-width: 134px;
+    z-index: 555; }
+  .products_container figure {
+    margin: 2.0em auto 3.5em; }
+    .products_container figure img {
+      box-shadow: 0 2px 8px #563508;
+      display: block;
+      border: 8px solid #A944BE; }
+  .products_container figure.full_pup_group {
+    max-width: 80%;
+    position: relative;
+    z-index: 22; }
+  .products_container figure.wagalong_image {
+    max-width: 50%; }
+  .products_container figure.puppy_park_image {
+    max-width: 65%; }
+
+.product_header {
+  border-radius: 0 !important;
+  -webkit-clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
+  clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
+  height: 75px;
+  width: 60%;
+  line-height: 64px;
+  font-size: 33px;
+  font-weight: bolder;
+  margin-bottom: 60px;
+  box-shadow: 0 2px 8px #563508;
+  background-color: #A944BE;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto; }
+
+.stitched {
+  padding: 20px;
+  margin: 10px;
+  background: #F34B7F;
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.3em;
+  border: 6px dashed #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 0 20px #F34B7F, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+  text-shadow: -1px -1px #aa3030;
+  font-weight: normal; }
+  .stitched div.form_title {
+    display: block;
+    width: 25%;
+    margin: 4em auto 0; }
+    .stitched div.form_title h2 {
+      padding-bottom: 0.55em; }
+  .stitched h2.contact_title {
+    text-align: center;
+    border-bottom: 2px dashed #fff; }
+  .stitched p:nth-of-type(4) {
+    text-align: center !important; }
+  .stitched label {
+    text-align: left; }
+  .stitched .wp-block-image {
+    position: absolute;
+    top: -15%;
+    left: 0;
+    right: 0;
+    margin: 0 auto; }
+  .stitched input[type="text"], .stitched input[type="email"] {
+    width: 100%; }
+  .stitched input[type="submit"] {
+    border: none;
+    border-color: transparent;
+    border-radius: 7px;
+    background: #98D2F0;
+    color: white;
+    font-size: 1.125em;
+    line-height: 1;
+    padding: .6em 1em .4em;
+    margin: 0 auto; }
+  .stitched .wpcf7 form.sent p {
+    display: none; }
+  .stitched .wpcf7-form .wpcf7-response-output.wpcf7-validation-errors {
+    color: #ffffff;
+    background-color: transparent;
+    border: 0;
+    padding: 10px;
+    border-bottom: 2px dashed #fff;
+    text-align: center;
+    font-size: 1.5em; }
+  .stitched .wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+    color: #ffffff;
+    background-color: transparent;
+    border: 0;
+    padding: 10px;
+    border-bottom: 2px dashed #fff;
+    text-align: center;
+    font-size: 1.5em; }
+  .stitched span.wpcf7-not-valid-tip {
+    color: #efe477;
+    font-size: 1em;
+    font-weight: normal;
+    display: block; }
+
+footer {
+  overflow: hidden;
+  position: relative; }
 
 /*# sourceMappingURL=style.css.map */

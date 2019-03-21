@@ -27,7 +27,9 @@
 		) );
 		?>
 	</div><!-- .entry-content -->
-	<div id="footer-border"></div>
+	<div id="footer-border">
+		<div id="paw-bottom-1"></div>
+	</div>
 	<?php if ( get_edit_post_link() ) : ?>
 		<footer class="entry-footer">
 			<?php

@@ -10,6 +10,38 @@
 	    font-weight: 500;
 	}
 }
+#paw-bg-1, #paw-bg-2, #paw-bg-3 {
+	position: absolute;
+	background: url(images/luvi-large-paw-ds_03.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 14%;
+	padding-bottom: 14%;
+}
+#paw-bg-1 {
+	top: 122px;
+    -webkit-transform: rotate(1deg);
+    transform: rotate(37deg);
+    left: -4.5%;
+    display:none;
+}
+#paw-bg-2 {
+	top: 175px;
+right: 2%;
+-webkit-transform: rotate(1deg);
+transform: rotate(-6deg);
+display:none;
+}
+#paw-bg-3 {
+	top: 478px;
+	right: -4.5%;
+	-webkit-transform: rotate(-28deg);
+transform: rotate(-28deg);
+display:none;
+}
+.paw-graphic {
+	display:none;
+}
 .jef_content{
 	.wp-block-media-text__content{
 		background-color: #F34B7F;
@@ -23,17 +55,24 @@
 		position: relative;
 		z-index: 555;
 	}
+	.wp-block-image img {
+	    max-width: 100%;
+	    width: 100%;
+	    height: auto;
+	    min-width:360px;
+	    position: relative;
+	    z-index: 555;
+	}
 }
 
 .wp-block-image img {
     max-width: 100%;
     width: 100%;
     height: auto;
-    min-width:360px;
     position: relative;
     z-index: 555;
 }
-
+//About Page Styles
 .jeff_content_container{
 	.inner-column-1{
 		position: relative;
@@ -44,6 +83,9 @@
 		z-index:36;
 		color:#fff;
 		text-align: center;
+		.kt-inside-inner-col{
+			margin-left:-85px;
+		}
 		
 		.jeff_text_block{
 			background-color: #F34B7F;
@@ -61,4 +103,163 @@
 		}
 	}
 	
+}
+
+//Meet The Pups Page Styles
+.pup_container{
+	background-color: #ffffff;
+	border-radius: 20px;
+	padding: 0.75em;
+	.kt-inside-inner-col {
+	    border: 3px dashed #F34B7F;
+	    border-radius: 20px;
+	}
+}
+.first_litter_bannner{
+	position: absolute;
+    top: -1.0em;
+    left: -51px;
+    max-width: 134px;
+    z-index: 555;
+}
+
+//Products Page Styles
+.products_container{
+	text-align: center;
+	max-width: $narrow_container_width;
+	margin:0 auto;
+	position:relative;
+	.first_litter_bannner {
+	    position: absolute;
+	    top: 4em;
+	    left: 45px;
+	    max-width: 134px;
+	    z-index: 555;
+	}
+	figure{
+		margin: 2.0em auto 3.5em;
+		img{
+			box-shadow: 0 2px 8px #563508;
+			display: block;
+			border:8px solid #A944BE;
+		}
+	}
+	figure.full_pup_group{
+		max-width: 80%;
+	    position: relative;
+	    z-index: 22;
+	}
+	figure.wagalong_image{
+		max-width: 50%
+	}
+	figure.puppy_park_image{
+		max-width: 65%
+	}
+	
+}
+.product_header{
+	border-radius: 0 !important;
+    -webkit-clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
+    clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
+    height: 75px;
+    width: 60%;
+    line-height: 64px;
+    font-size: 33px;
+    font-weight: bolder;
+    margin-bottom: 60px;
+    box-shadow: 0 2px 8px #563508;
+    background-color: #A944BE;
+    text-align: center;
+    color:#ffffff;
+    margin: 0 auto;
+
+}
+
+//PopUp
+.stitched {
+   padding: 20px;
+   margin: 10px;
+   background: #F34B7F;
+   color: #fff;
+   font-size: 21px;
+   font-weight: bold;
+   line-height: 1.3em;
+   border: 6px dashed #fff;
+   border-radius: 10px;
+   box-shadow: 0 0 0 20px #F34B7F, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   text-shadow: -1px -1px #aa3030;
+   font-weight: normal;
+   div.form_title{
+   	    display: block;
+	    width: 25%;
+	    margin: 4em auto 0;
+	    h2{
+	    	padding-bottom: 0.55em;
+	    }
+   }
+   h2.contact_title{
+   	text-align: center;
+   	border-bottom: 2px dashed #fff;
+   }
+   p:nth-of-type(4) {
+   	text-align: center!important;
+   }
+   label{
+   	text-align: left;
+   }
+   .wp-block-image{
+		position:absolute;
+		top:-15%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+   }
+   input[type="text"], input[type="email"]{
+   	width:100%;
+   }
+	input[type="submit"] {
+		border: none;
+		border-color: transparent;
+		border-radius: 7px;
+		background: #98D2F0;
+		color: rgba(255, 255, 255, 1.0);
+		font-size: 1.125em;
+		line-height: 1;
+		padding: .6em 1em .4em;
+		margin: 0 auto;
+	}
+	.wpcf7 form.sent p {
+		display: none;
+	}
+	.wpcf7-form .wpcf7-response-output.wpcf7-validation-errors {
+	    color: #ffffff;
+	    background-color: transparent;
+	    border: 0;
+	    padding: 10px;
+	    border-bottom: 2px dashed #fff;
+	    text-align: center;
+	    font-size: 1.5em;
+	}
+	.wpcf7-form .wpcf7-response-output.wpcf7-mail-sent-ok {
+	    color: #ffffff;
+	    background-color: transparent;
+	    border: 0;
+	    padding: 10px;
+	    border-bottom: 2px dashed #fff;
+        text-align: center;
+	    font-size: 1.5em;
+	}
+	span.wpcf7-not-valid-tip {
+	    color: #efe477;
+	    font-size: 1em;
+	    font-weight: normal;
+	    display: block;
+	}
+
+}
+
+//Footer
+footer{
+	overflow: hidden;
+	position: relative;
 }
