@@ -258,6 +258,31 @@ display:none;
 
 }
 
+//Store Locator
+.page-id-242 {
+	#floating-heart-2{
+		display:none;
+	}
+	.wpsl-search {
+		background-color: #f34b7f!important;
+		color:#ffffff!important;
+	}
+	#wpsl-search-btn{
+		border: none;
+		border-color: transparent;
+		border-radius: 7px;
+		background: #98D2F0;
+		color: rgba(255, 255, 255, 1.0);
+		font-size: 1.25em;
+		line-height: 1;
+		padding: .6em 1em .4em;
+		margin: 0 auto;
+	}
+	a.wpsl-directions{
+		color:#98D2F0;
+	}
+}
+
 //Footer
 footer{
 	overflow: hidden;

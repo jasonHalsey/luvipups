@@ -474,6 +474,11 @@ html {
   max-width: 1600px;
   margin: 0 auto; }
 
+.wide_content_container_map {
+  max-width: 1600px;
+  margin: 0 auto;
+  background-color: #ffffff; }
+
 *,
 *:before,
 *:after {
@@ -687,12 +692,28 @@ a {
       width: 30px;
       display: block;
       margin: 0 auto;
-      opacity: 1; }
+      opacity: 1;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      transform-origin: bottom;
+      animation-name: bounce-4;
+      animation-timing-function: ease; }
   .main-navigation li.menu-divider-item {
     padding-top: 0; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
+@keyframes bounce-4 {
+  0% {
+    transform: scale(1, 1) translateY(0); }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0); }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-30px); }
+  50% {
+    transform: scale(1, 1) translateY(0); }
+  100% {
+    transform: scale(1, 1) translateY(0); } }
   .main-navigation .menu-menu-container {
     max-width: 1600px;
     margin: 0 auto;
@@ -1414,6 +1435,24 @@ object {
     font-size: 1em;
     font-weight: normal;
     display: block; }
+
+.page-id-242 #floating-heart-2 {
+  display: none; }
+.page-id-242 .wpsl-search {
+  background-color: #f34b7f !important;
+  color: #ffffff !important; }
+.page-id-242 #wpsl-search-btn {
+  border: none;
+  border-color: transparent;
+  border-radius: 7px;
+  background: #98D2F0;
+  color: white;
+  font-size: 1.25em;
+  line-height: 1;
+  padding: .6em 1em .4em;
+  margin: 0 auto; }
+.page-id-242 a.wpsl-directions {
+  color: #98D2F0; }
 
 footer {
   overflow: hidden;

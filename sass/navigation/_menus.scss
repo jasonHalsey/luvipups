@@ -115,6 +115,12 @@
 			    display: block;	
 			    margin: 0 auto;
 			    opacity:1;
+
+			    animation-duration: 2s;
+		        animation-iteration-count: infinite;
+		        transform-origin: bottom;
+		        animation-name: bounce-4;
+        		animation-timing-function: ease;
 			}
 		}
 	}
@@ -126,6 +132,16 @@
 		display: block;
 		text-decoration: none;
 	}
+
+	//paw animation
+
+    @keyframes bounce-4 {
+        0%   { transform: scale(1,1)    translateY(0); }
+        10%  { transform: scale(1.1,.9) translateY(0); }
+        30%  { transform: scale(.9,1.1) translateY(-30px); }
+        50%  { transform: scale(1,1)    translateY(0); }
+        100% { transform: scale(1,1)    translateY(0); }
+    }
 
 	.current_page_item > a,
 	.current-menu-item > a,
