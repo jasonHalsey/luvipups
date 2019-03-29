@@ -9,3 +9,15 @@ jQuery(window).load(function() {
     });
   });
 });
+
+jQuery(document).ready(function() {
+
+	moveInstaheader()
+});
+
+// Move Calendar's Navigation 
+function moveInstaheader() {
+  var translate = jQuery('#sbi_load');
+  jQuery(translate).detach();
+  jQuery('#sbi_images').prepend(jQuery(translate));
+}

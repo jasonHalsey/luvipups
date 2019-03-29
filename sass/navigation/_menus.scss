@@ -1,5 +1,8 @@
 .main-navigation {
-
+	display: block;
+	@media screen and (max-width: 1200px) {
+		display:none;
+	}
 	width: 100%;
 	ul {
 		list-style: none;
@@ -10,6 +13,7 @@
 			text-align: center;
 			font-size: 22px;
 			line-height: 1;
+			font-weight:600;
 			border-bottom: 5px solid transparent;
 			padding-bottom: 0.25em;
 			&:visited {
@@ -41,6 +45,8 @@
 		}
 		a.centered_header_logo{
 				text-decoration: none;
+				margin-left: 2.0em;
+				padding-top:1.5em;
 				&:hover,
 				&:focus,
 				&:active {
@@ -56,6 +62,18 @@
 					&:before{
 						opacity: 0;
 					}
+				}
+				img{
+					width:100%;
+					height:auto;
+					max-width: 275px;
+				}
+				&:before{
+			    	content:"";
+					width: 1px;
+				    display: block;	
+				    margin: 0 auto;
+				    opacity:0;
 				}
 			}
 		ul {
@@ -159,19 +177,10 @@
 	}
 }
 
-
-/* Small menu. */
-.menu-toggle,
-.main-navigation.toggled ul {
-	display: block;
-}
-
-@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
-	.main-navigation ul {
-		display: block;
+//Add Proper Font to Mobile Menu
+@media only screen and (max-width: 1200px){
+	body #mg-wprm-wrap *, #wprmenu_bar .menu_title, #wprmenu_bar input, html body body #mg-wprm-wrap a:not(i) {
+	    font-family: 'M PLUS Rounded 1c', sans-serif!important;
 	}
 }
 

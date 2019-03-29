@@ -31,41 +31,42 @@ object {
 
 #video-block {
 	position: relative;
-	background-image: url(images/video_block_be.png);
+	background-image: url(images/luvi_backgrounds-paw_bg_med2.png);
 	background-repeat: repeat;
 	padding: 30px;
 	margin-top: -30px;
-	#paw-bg-1, #paw-bg-2, #paw-bg-3 {
-		position: absolute;
-		background: url(images/luvi-large-paw-ds_03.png);
-		background-repeat: no-repeat;
-		background-size: 100%;
-		width: 14%;
-    	padding-bottom: 14%;
-	}
-	#paw-bg-1 {
-		top: 122px;
-	    -webkit-transform: rotate(1deg);
-	    transform: rotate(37deg);
-	    left: -4.5%;
-	    display:none;
-	}
-	#paw-bg-2 {
-		top: 175px;
-    right: 2%;
-    -webkit-transform: rotate(1deg);
-    transform: rotate(-6deg);
-    display:none;
-	}
-	#paw-bg-3 {
-		top: 478px;
-		right: -4.5%;
-		-webkit-transform: rotate(-28deg);
-    transform: rotate(-28deg);
-    display:none;
-	}
+		// #paw-bg-1, #paw-bg-2, #paw-bg-3 {
+		// 	position: absolute;
+		// 	background: url(images/luvi_paw.png);
+		// 	background-repeat: no-repeat;
+		// 	background-size: 100%;
+		// 	width: 14%;
+	 //    	padding-bottom: 14%;
+		// }
+		// #paw-bg-1 {
+		// 	top: 122px;
+		//     -webkit-transform: rotate(1deg);
+		//     transform: rotate(37deg);
+		//     left: -4.5%;
+		//     display:none;
+		// }
+		// #paw-bg-2 {
+		// 	top: 175px;
+	 //    right: 2%;
+	 //    -webkit-transform: rotate(1deg);
+	 //    transform: rotate(-6deg);
+	 //    display:none;
+		// }
+		// #paw-bg-3 {
+		// 	top: 478px;
+		// 	right: -4.5%;
+		// 	-webkit-transform: rotate(-28deg);
+	 //    transform: rotate(-28deg);
+	 //    display:none;
+		// }
 	.paw-graphic {
 		display:none;
+		z-index: 1;
 	}
 }
 
@@ -75,6 +76,8 @@ object {
 	padding: 1.5%;
 	background: #a943bd;
 	box-shadow: 0 2px 8px #563508;
+	position: relative;
+    z-index: 9;
 	.wp-block-embed__wrapper{
 		 position: relative;
 		 overflow: hidden;
@@ -132,13 +135,13 @@ object {
 	button {
 		position: relative;
 		width: 100%;
-    background: #f34b7f;
-    border-radius: 12px;
-    font-size: 20px;
-		font-weight: bolder;
-    border-color: #ffffff;
-    color: #ffffff;
-    border: 2px solid;
+	    background: #f34b7f;
+	    border-radius: 12px;
+	    font-size: 20px;
+			font-weight: bolder;
+	    border-color: #ffffff;
+	    color: #ffffff;
+	    border: 2px dashed;
 		cursor: pointer;
 		-webkit-transition: .15s;
 	  transition: .15s;

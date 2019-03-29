@@ -26,9 +26,9 @@
 
 	<header id="masthead" class="site-header">
 
-
+		<div class="mobile_logo"><img src="<?php echo bloginfo('template_directory'); ?>/images/luvi_logo.svg" /></div>
 		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'underscore_2_14_19' ); ?></button>
+			
 			<?php
  
 				if ( is_active_sidebar( 'custom-header-widget' ) ) : ?>

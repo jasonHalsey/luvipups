@@ -17,10 +17,12 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<!-- <div id="paw-bottom-1"></div>
-			<div id="paw-bottom-2"></div> -->
-			<!-- <div id="floating-heart-1"></div> -->
 			<div id="floating-heart-2"></div>
+			<div id="corgi-front"></div>
+			<div id="corgi-back"></div>
+			<div id="basset"></div>
+			<div id="pit-01"></div>
+			
 		<?php
 		while ( have_posts() ) :
 			the_post();

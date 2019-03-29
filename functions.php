@@ -182,3 +182,7 @@ function wpb_widgets_init() {
  
 }
 add_action( 'widgets_init', 'wpb_widgets_init' );
+
+/*  Remove Admin Bar
+/* ------------------------------------ */ 
+	add_filter('show_admin_bar', '__return_false');

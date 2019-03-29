@@ -8,6 +8,7 @@ html {
 	#floating-heart-1, #floating-heart-2 {
 		position: absolute;
 		background-size: 100%;
+		z-index: 4;
 	}
 	#floating-heart-1 {
 		background: url(images/floating-hearts_07.png);
@@ -32,7 +33,7 @@ html {
 	}
 	#paw-bottom-1, #paw-bottom-2 {
 		position: absolute;
-		background: url(images/luvi-large-paw-ds_03.png);
+		background: url(images/luvi_paw.png);
 		background-repeat: no-repeat;
 		background-size: 100%;
 		width: 9%;
