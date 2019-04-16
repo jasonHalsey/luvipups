@@ -27,7 +27,7 @@
 	<header id="masthead" class="site-header">
 
 		<div class="mobile_logo"><img src="<?php echo bloginfo('template_directory'); ?>/images/luvi_logo.svg" /></div>
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation allnav">
 			
 			<?php
  

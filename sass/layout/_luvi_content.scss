@@ -88,7 +88,7 @@
 	    width: 33%;
 	    margin: 0 auto;
 	    text-align: center;
-	    font-weight: 500;
+	    font-weight: bolder;
 	}
 }
 #paw-bg-1, #paw-bg-2{
@@ -97,7 +97,7 @@
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 14%;
-	padding-bottom: 14%;
+	padding-bottom: 26%;
 }
 #paw-bg-3 {
 	position: absolute;
@@ -105,7 +105,7 @@
 	background-repeat: no-repeat;
 	background-size: 100%;
 	width: 10%;
-	padding-bottom: 14%;
+	padding-bottom: 26%;
 }
 #paw-bg-1 {
 	top: 122px;
@@ -170,6 +170,33 @@ body.page-id-139{
 		@media screen and (max-width: 815px) {
 	    	display: none;
 	    }
+	}
+}
+
+body.page-id-242{
+	#paw-bg-1 {
+	    display:block;
+	}
+	#corgi-front{
+        display:none
+	}
+	#floating-heart-2{
+		top: 62%;
+	}
+	#basset{
+		display:none
+	}
+	#corgi-back{
+		display:none
+	}
+	#pit-01{
+		display:none
+	}
+	#paw-bg-3{
+		display:none!important;
+	}
+	#paw-bg-2{
+		display:none!important;
 	}
 }
 
@@ -353,17 +380,29 @@ body.page-id-139{
 }
 
 //PopUp
-.stitched {
-   padding: 20px;
-   margin: 10px;
-   background: #F34B7F;
+$color: #F34B7F;
+
+.stitched{
+   // padding: 20px;
+   // margin: 10px;
+   // background: #F34B7F;
+   // border: 6px dashed #fff;
+   // border-radius: 10px;
+   // box-shadow: 0 0 0 20px #F34B7F, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+   background: $color;
+	border-radius: 5px;
+	margin: 110px auto;
+	padding: 5px 10px;
+	border: 2px dashed #fff;
+  	outline: 2px dashed darken($color, 10);
+	box-shadow: 0 0 0 6px $color, 0 0 1px 7px darken($color, 10);
+
    color: #fff;
    font-size: 21px;
    font-weight: bold;
    line-height: 1.3em;
-   border: 6px dashed #fff;
-   border-radius: 10px;
-   box-shadow: 0 0 0 20px #F34B7F, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+
+
    text-shadow: -1px -1px #aa3030;
    font-weight: normal;
    text-align: center;
