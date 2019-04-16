@@ -469,7 +469,8 @@ html {
 .content_container {
   max-width: 1000px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  z-index: 99; }
 
 .wide_content_container {
   max-width: 1600px;
@@ -1454,6 +1455,52 @@ body.page-id-242 #paw-bg-2 {
         margin-top: 0em;
         padding: 2.0em; } }
 
+.adopted_arthur .wp-block-image {
+  background-image: url(images/arthur.jpg);
+  background-size: cover; }
+
+.adopted_row {
+  color: #ffffff;
+  margin-bottom: 4.0em; }
+  .adopted_row .kt-row-layout-inner {
+    background-color: #F34B7F;
+    border-radius: 25px;
+    padding-right: 1.5em; }
+    @media screen and (max-width: 800px) {
+      .adopted_row .kt-row-layout-inner {
+        padding-right: 0; } }
+  .adopted_row .kt-row-column-wrap {
+    padding: 0; }
+  .adopted_row .wp-block-image {
+    margin: 0; }
+    .adopted_row .wp-block-image img {
+      opacity: 0; }
+  .adopted_row .inner-column-1 .kt-inside-inner-col {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px; }
+    @media screen and (max-width: 800px) {
+      .adopted_row .inner-column-1 .kt-inside-inner-col {
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-left-radius: 0; } }
+  .adopted_row .inner-column-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 1.5em; }
+    .adopted_row .inner-column-2 h2 {
+      text-align: center;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      margin: 0.125em auto;
+      font-size: 2.75em;
+      text-transform: uppercase; }
+    @media screen and (max-width: 800px) {
+      .adopted_row .inner-column-2 {
+        padding: 0; } }
+  @media screen and (max-width: 800px) {
+    .adopted_row .jeff_text_block {
+      padding: 0 1.25em; } }
+
 .pup_container {
   background-color: #ffffff;
   border-radius: 20px;
@@ -1468,6 +1515,22 @@ body.page-id-242 #paw-bg-2 {
   left: -51px;
   max-width: 134px;
   z-index: 555; }
+
+.real_pups_banner {
+  border-radius: 0 !important;
+  -webkit-clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
+  clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
+  height: 75px;
+  width: 60%;
+  line-height: 64px;
+  font-size: 33px;
+  font-weight: bolder;
+  margin-bottom: 60px;
+  box-shadow: 0 2px 8px #563508;
+  background-color: #A944BE;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto 1.0em; }
 
 .products_container {
   text-align: center;

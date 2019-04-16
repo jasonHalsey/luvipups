@@ -276,6 +276,66 @@ body.page-id-242{
 	}
 	
 }
+.adopted_arthur{
+	.wp-block-image{
+		background-image: url(images/arthur.jpg);
+		background-size:cover;
+	}
+}
+.adopted_row{
+	color:#ffffff;
+	margin-bottom: 4.0em;
+	.kt-row-layout-inner{
+		background-color: #F34B7F;
+		border-radius: 25px;
+		padding-right:1.5em;
+		@media screen and (max-width: 800px) {
+			padding-right:0;
+		}
+	}
+	.kt-row-column-wrap{
+		padding:0;
+	}
+	.wp-block-image{
+		margin: 0;
+		img{
+			opacity:0;
+		}
+	}
+	.inner-column-1{
+		.kt-inside-inner-col{
+			border-top-left-radius: 25px;
+			border-bottom-left-radius: 25px;
+			@media screen and (max-width: 800px) {
+				border-top-left-radius: 25px;
+				border-top-right-radius: 25px;
+				border-bottom-left-radius: 0;
+			}
+		}
+		
+	}
+	.inner-column-2{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding-left:1.5em;
+		h2{
+			text-align: center;
+		    font-family: 'M PLUS Rounded 1c', sans-serif;
+		    margin: 0.125em auto;
+		    font-size: 2.75em;
+		    text-transform: uppercase;
+		}
+		@media screen and (max-width: 800px) {
+			padding:0;
+		}
+  	}
+  	.jeff_text_block{
+  		@media screen and (max-width: 800px) {
+			padding:0 1.25em;;
+		}
+	}
+}
 
 //Meet The Pups Page Styles
 .pup_container{
@@ -293,6 +353,22 @@ body.page-id-242{
     left: -51px;
     max-width: 134px;
     z-index: 555;
+}
+.real_pups_banner{
+	border-radius: 0 !important;
+    -webkit-clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
+    clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
+    height: 75px;
+    width: 60%;
+    line-height: 64px;
+    font-size: 33px;
+    font-weight: bolder;
+    margin-bottom: 60px;
+    box-shadow: 0 2px 8px #563508;
+    background-color: #A944BE;
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto 1.0em;
 }
 
 //Products Page Styles

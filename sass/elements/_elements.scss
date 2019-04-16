@@ -79,6 +79,7 @@ html {
 	max-width:$narrow_container_width;
 	margin:0 auto;
 	position:relative;
+	z-index:99;
 }
 .wide_content_container{
 	max-width:$wide_container_width;
