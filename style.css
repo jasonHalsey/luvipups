@@ -1464,7 +1464,6 @@ body.page-id-242 #paw-bg-2 {
   margin-bottom: 4.0em; }
   .adopted_row .kt-row-layout-inner {
     background-color: #F34B7F;
-    border-radius: 25px;
     padding-right: 1.5em; }
     @media screen and (max-width: 800px) {
       .adopted_row .kt-row-layout-inner {
@@ -1522,7 +1521,7 @@ body.page-id-242 #paw-bg-2 {
   clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
   height: 75px;
   width: 60%;
-  line-height: 64px;
+  line-height: 75px;
   font-size: 33px;
   font-weight: bolder;
   margin-bottom: 60px;
@@ -1579,7 +1578,7 @@ body.page-id-242 #paw-bg-2 {
   clip-path: polygon(100% 0, 94% 50%, 100% 100%, 0% 100%, 6% 50%, 0% 0%);
   height: 75px;
   width: 60%;
-  line-height: 64px;
+  line-height: 77px;
   font-size: 33px;
   font-weight: bolder;
   margin-bottom: 60px;
